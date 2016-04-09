@@ -6,7 +6,7 @@ import android.widget.RemoteViewsService;
 import com.sam_chordas.android.stockhawk.data.WidgetStockDataProvider;
 
 /**
- * Created by 880443 on 3/30/2016.
+ * Created by Jinal
  */
 public class WidgetStockService extends RemoteViewsService {
     @Override

@@ -20,6 +20,7 @@
     <string name="network_toast" translatable="false">Uh-oh! This app requires an internet connection</string>
     <string name="tag" translatable="false">tag</string>
     <string name="stockSavedAlready" translatable="false">This stock is already saved!</string>
+    <string name="stockNotAvailable" translatable="false">This stock is not found!</string>
     <string name="add" translatable="false">add</string>
     <string name="symbol" translatable="false">symbol</string>
     <string name="periodic" translatable="false">periodic</string>

@@ -42,6 +42,7 @@ public class Utils {
                             && !"null".equalsIgnoreCase(jsonObject.getString("Bid")))
                         batchOperations.add(buildBatchOperation(jsonObject));
 
+
                 } else {
                     resultsArray = jsonObject.getJSONObject("results").getJSONArray("quote");
 

@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 880443 on 3/30/2016.
+ * Created by Jinal.
  */
 public class WidgetStockDataProvider implements RemoteViewsService.RemoteViewsFactory {
 
