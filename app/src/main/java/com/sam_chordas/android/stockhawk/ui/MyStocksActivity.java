@@ -59,7 +59,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     mContext = this;
     ConnectivityManager cm =
         (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
-
+getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
     isConnected = activeNetwork != null &&
         activeNetwork.isConnectedOrConnecting();
@@ -196,6 +196,9 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     //noinspection SimplifiableIfStatement
     if (id == R.id.action_settings) {
       return true;
+    }
+    if (id == android.R.id.home) {
+      finish();
     }
 
     if (id == R.id.action_change_units){

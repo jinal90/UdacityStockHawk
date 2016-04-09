@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.db.chart.Tools;
@@ -38,6 +39,7 @@ public class StockLineGraphActivity extends AppCompatActivity implements LoaderM
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stock_line_graph);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ButterKnife.bind(this);
         if(getIntent().getExtras() != null && !TextUtils.isEmpty
@@ -139,5 +141,11 @@ public class StockLineGraphActivity extends AppCompatActivity implements LoaderM
         }
 
         return div;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
     }
 }

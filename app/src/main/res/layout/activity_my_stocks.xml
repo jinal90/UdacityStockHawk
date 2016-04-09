@@ -10,6 +10,7 @@
       android:id="@+id/recycler_view"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
+      android:contentDescription="@string/content_desc_stock_list"
       />
 
   <com.melnykov.fab.FloatingActionButton
@@ -19,8 +20,10 @@
       android:layout_gravity="bottom|right"
       android:layout_margin="16dp"
       android:src="@drawable/ic_add_white_24dp"
-      fab:fab_colorNormal="@color/material_blue_500"
-      fab:fab_colorPressed="@color/material_blue_600"
+      android:contentDescription="@string/content_desc_add_Stock"
+      android:background="@color/accent"
+      fab:fab_colorNormal="@color/accent"
+      fab:fab_colorPressed="@color/accent"
       fab:fab_colorRipple="@color/ripple"
       fab:fab_shadow="true"
       fab:fab_type="normal"

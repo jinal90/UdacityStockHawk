@@ -28,13 +28,16 @@
     <string name="content_desc_graph" translatable="false">Individual Stock Graph</string>
     <string name="stockNotFound" translatable="false">This Stock Not Found</string>
     <string name="content_desc_add_Stock" translatable="false">Add New Stock</string>
-    <string name="content_desc_symbol" translatable="false">Stock Symbol Value</string>
-    <string name="content_desc_bid" translatable="false">Stock Symbol bid</string>
     <string name="content_desc_change" translatable="false">Stock Symbol Change Value</string>
-    <string name="title_activity_stock_line_graph" translatable="false">Stock Line Graph Activity</string>
+    <string name="title_activity_stock_line_graph" translatable="false">Stock Line Graph</string>
     <string name="content_desc_stock_symbol" translatable="false">Stock symbol</string>
+    <string name="content_desc_stock_list" translatable="false">List of favorite stocks</string>
     <string name="content_desc_stock_price" translatable="false">Stock bid price</string>
     <string name="content_desc_stock_change" translatable="false">Stock bid price change arrow</string>
+    <string name="content_desc_stockhawk_logo" translatable="false">Stock Hawk app Logo</string>
+    <string name="content_desc_stock_hawk_widget" translatable="false">Stock Hawk app widget</string>
+    <string name="content_desc_widget_title" translatable="false">Stock Hawk favorite stock list title</string>
+
     <string name="widget_title" translatable="false">Favourite Stock List</string>
 
     <string name="no_network" translatable="false">No Network ! , List may be out of date or empty</string>

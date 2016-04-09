@@ -3,25 +3,25 @@
   <!-- Base application theme. -->
   <style name="AppTheme"
       parent="Theme.AppCompat.Light.DarkActionBar">
-      <item name="colorPrimary">@color/material_blue_500</item>
-      <item name="colorPrimaryDark">@color/material_blue_700</item>
-    <item name="colorAccent">@color/material_green_700</item>
+      <item name="colorPrimary">@color/primary</item>
+      <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/accent</item>
     <!-- Customize your theme here. -->
   </style>
 
   <style name="PercentChangeTextStyle">
     <item name="android:textSize">20sp</item>
-    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textColor">@color/primary_text</item>
     <item name="android:textStyle">bold</item>
   </style>
   <style name="BidPriceTextStyle">
     <item name="android:textSize">20sp</item>
-    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textColor">@color/primary_text</item>
   </style>
   <style name="StockSymbolTextStyle">
     <item name="android:textSize">25sp</item>
     <item name="android:textAllCaps">true</item>
-    <item name="android:textColor">@android:color/black</item>
+    <item name="android:textColor">@color/primary_text</item>
   </style>
 
 </resources>

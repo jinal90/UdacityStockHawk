@@ -14,7 +14,7 @@
         style="@style/StockSymbolTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/content_desc_symbol"
+        android:contentDescription="@string/content_desc_stock_symbol"
         android:gravity="start|center_vertical"
         tools:text="GOOG" />
 
@@ -29,7 +29,7 @@
             style="@style/BidPriceTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/content_desc_bid"
+            android:contentDescription="@string/content_desc_stock_price"
             android:paddingEnd="3dp"
             android:paddingStart="3dp"
             tools:text="1000.00" />
