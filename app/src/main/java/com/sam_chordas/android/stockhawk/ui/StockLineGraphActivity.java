@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.db.chart.Tools;
 import com.db.chart.model.LineSet;
@@ -24,13 +25,16 @@ import com.sam_chordas.android.stockhawk.data.QuoteProvider;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class StockLineGraphActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
+public class StockLineGraphActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
 
     @Bind(R.id.stockLineChart)
-     LineChartView stockLineChart;
+    LineChartView stockLineChart;
 
-    private String selectedSymbol ="";
+    @Bind(R.id.txtStockTitle)
+    TextView txtSymbol;
+
+    private String selectedSymbol = "";
     private LineSet lineSet;
 
     @Override
@@ -40,12 +44,14 @@ public class StockLineGraphActivity extends AppCompatActivity implements LoaderM
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ButterKnife.bind(this);
-        if(getIntent().getExtras() != null && !TextUtils.isEmpty
-                (getIntent().getExtras().getString(getString(R.string.symbol)))){
+        if (getIntent().getExtras() != null && !TextUtils.isEmpty
+                (getIntent().getExtras().getString(getString(R.string.symbol)))) {
             selectedSymbol = getIntent().getExtras().getString(getString(R.string.symbol));
         }
 
         setupUI();
+
+        txtSymbol.setText(selectedSymbol);
 
         Bundle stockBundle = new Bundle();
         stockBundle.putString(getString(R.string.symbol), selectedSymbol);
@@ -109,10 +115,11 @@ public class StockLineGraphActivity extends AppCompatActivity implements LoaderM
         float min = 0;
         for (int i = 0; i < dataCoursor.getCount(); i++) {
             float price = Float.parseFloat(dataCoursor.getString(dataCoursor.getColumnIndex(QuoteColumns.BIDPRICE)));
-            if(max<price)
+
+            if (max < price)
                 max = price;
 
-            if(min>price)
+            if (min > price)
                 min = price;
 
             lineSet.addPoint("" + i, price);
@@ -129,7 +136,7 @@ public class StockLineGraphActivity extends AppCompatActivity implements LoaderM
         stockLineChart.show();
     }
 
-    public int findDivisor(int num){
+    public int findDivisor(int num) {
 
         int div = num;
         for (int i = 2; i <= num / 2; i++) {
