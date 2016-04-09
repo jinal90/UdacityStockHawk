@@ -1,21 +1,41 @@
 <resources>
-    <string name="app_name">Stock Hawk</string>
 
-    <string name="action_example">Example action</string>
+    <string name="app_name" translatable="false">Stock Hawk</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="action_change_units">Change Units</string>
-    <string name="symbol_search">Symbol Search</string>
-    <string name="content_test">Search for a Stock Symbol</string>
-    <string name="input_hint">FB</string>
-    <string name="input_prefill"></string>
-    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
-    <string name="title_activity_stock_line_graph">Stock Line Graph Activity</string>
-    <string name="symbol">symbol</string>
-    <string name="content_desc_graph">Line graph to denote stock\'s value over time</string>
-    <string name="content_desc_add_Stock">Button to add new stocks</string>
-    <string name="content_desc_stock_symbol">Stock symbol</string>
-    <string name="content_desc_stock_price">Stock bid price</string>
-    <string name="content_desc_stock_change">Stock bid price change arrow</string>
-    <string name="stockNotFound">Stock Not Found</string>
+    <string name="action_example" translatable="false">Example action</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+
+
+    <string name="action_change_units" translatable="false">Change Units</string>
+    <string name="symbol_search" translatable="false">Symbol Search</string>
+    <string name="content_test" translatable="false">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="false">FB</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+    <string name="string_symbol" translatable="false">symbol</string>
+    <string name="appwidget_text" translatable="false">Stock Hawk</string>
+
+
+    <string name="input_prefill" translatable="false"></string>
+    <string name="network_toast" translatable="false">Uh-oh! This app requires an internet connection</string>
+    <string name="tag" translatable="false">tag</string>
+    <string name="stockSavedAlready" translatable="false">This stock is already saved!</string>
+    <string name="add" translatable="false">add</string>
+    <string name="symbol" translatable="false">symbol</string>
+    <string name="periodic" translatable="false">periodic</string>
+    <string name="init" translatable="false">init</string>
+    <string name="title_activity_stock_detail" translatable="false">StockDetail</string>
+    <string name="content_desc_graph" translatable="false">Individual Stock Graph</string>
+    <string name="stockNotFound" translatable="false">This Stock Not Found</string>
+    <string name="content_desc_add_Stock" translatable="false">Add New Stock</string>
+    <string name="content_desc_symbol" translatable="false">Stock Symbol Value</string>
+    <string name="content_desc_bid" translatable="false">Stock Symbol bid</string>
+    <string name="content_desc_change" translatable="false">Stock Symbol Change Value</string>
+    <string name="title_activity_stock_line_graph" translatable="false">Stock Line Graph Activity</string>
+    <string name="content_desc_stock_symbol" translatable="false">Stock symbol</string>
+    <string name="content_desc_stock_price" translatable="false">Stock bid price</string>
+    <string name="content_desc_stock_change" translatable="false">Stock bid price change arrow</string>
+    <string name="widget_title" translatable="false">Favourite Stock List</string>
+
+    <string name="no_network" translatable="false">No Network ! , List may be out of date or empty</string>
 </resources>
