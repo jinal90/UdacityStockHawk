@@ -6,7 +6,7 @@ This project Stock Hawk is about diagnosing problems and practice improving apps
 
 ![Stock Hawk Main Screen](/StockHawkMainScreen.png?raw=true "Stock Hawk Main Screen")
 ![Stock Hawk Widget](/StockHawkWidget.png?raw=true "Stock Hawk Widget")
-![Stock Hawk Deatil Screen](/StockDetailScreen.png?raw=true "Stock Hawk Detail Screen")
+![Stock Hawk Detail Screen](/StockDetailScreen.png?raw=true "Stock Hawk Detail Screen")
 
 
 #### Tech
